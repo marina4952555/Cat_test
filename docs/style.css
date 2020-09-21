@@ -18,6 +18,10 @@ div {
   margin: 0 20px;
 }
 
+.name {
+  margin-left: 25px;
+}
+
 @media (min-width: 470px) {
   form, div {
     margin: 0 40px;
