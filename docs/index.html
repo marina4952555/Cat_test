@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Небольшой опросник для выявления кошатинов">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <title>Опросник</title>
+</head>
+<body>
+  <form class="form" method="post">
+    <legend>Этот опрос поможет определить стоит ли Вам заводить кота</legend>
+    <br>
+    <label>Имя
+      <input type="text" name="name" class="name" autocomplete="off" pattern="[A-Za-zА-Яа-яЁё]" required>
+    </label>
+    <br><br>
+    <label>Возраст
+      <input type="text" name="age" class="age" autocomplete="off" pattern="[0-9]{1,3}" required>
+    </label>
+    <br><br>
+    <label class="cats">Нравятся ли Вам котики и кошечки?
+      <br>
+      <input type="radio" name="cats" value="1" id="cats" required>Да
+      <br>
+      <input type="radio" name="cats" value="10" id="cats"">Нет
+    </label>
+    <br><br>
+    <label class="allergy">Есть ли у Вас аллергия на котиков?
+      <br>
+      <input type="radio" name="allergy" value="10" id="allergy"required>Да
+      <br>
+      <input type="radio" name="allergy" value="1" id="allergy"">Нет
+    </label>
+    <br><br>
+    <label class="availability">С Вами сейчас живёт котик?
+      <br>
+      <input type="radio" name="availability" value="2" id="availability"required>Да
+      <br>
+      <input type="radio" name="availability" value="1" id="availability">Нет
+    </label>
+    <br><br>
+    <label class="family">У Вашей семьи когда-нибудь были котики?
+      <br>
+      <input type="radio" name="family" value="1" id="family"required>Моя семья всегда держала у себя котов
+      <br>
+      <input type="radio" name="family" value="2" id="family">Как-то в моей семье был кот
+      <br>
+      <input type="radio" name="family" value="3" id="family">Никогда никаких котов не было
+      <br>
+    </label>
+    <br><br>
+    <label class="dress">Как вы относитесь к шерсти домашних животных, прилипшей к одежде?
+      <br>
+      <input type="radio" name="dress" value="3" id="dress"required>Это ужасно
+      <br>
+      <input type="radio" name="dress" value="2" id="dress">Не вижу в этом ничего ужасного
+      <br>
+      <input type="radio" name="dress" value="1" id="dress">Со мной всегда будет частичка моего любимца
+    </label>
+    <br><br>
+    <label class="bed">Вы бы пустили спать на кровате кота?
+      <br>
+      <input type="radio" name="bed" value="3" id="bed"required>Никогда
+      <br>
+      <input type="radio" name="bed" value="2" id="bed">Скорее всего да
+      <br>
+      <input type="radio" name="bed" value="1" id="bed">Обязательно, мы будем согревать друг друга
+      <br>
+    </label>
+    <br><br>
+    <label class="alone">Вы живёте один?
+      <br>
+      <input type="radio" name="alone" value="1" id="alone"required>Да
+      <br>
+      <input type="radio" name="alone" value="1" id="alone">Нет
+      <br>
+      <input type="radio" name="alone" value="1" id="alone">Скорее да, чем нет
+    </label>
+    <br><br>
+    <label class="home">Бывет ли такое, что вы отсутствуете по долгу дома?
+      <br>
+      <input type="radio" name="home" value="1" id="home"required>Я каждый день прихожу домой
+      <br>
+      <input type="radio" name="home" value="2" id="home">Обычно я каждый день бываю дома, но могу уехать куда-нибудь на 1-3 дня
+      <br>
+      <input type="radio" name="home" value="3" id="home">Бывает не появляюсь дома целую неделю
+      <br>
+      <input type="radio" name="home" value="4" id="home">Я часто отсутствую дома
+    </label>
+    <br><br>
+    <label class="blanket">Любите ли Вы подолгу валяться под одеялком?
+      <br>
+      <input type="radio" name="blanket" value="3" id="blanket"required>Нет
+      <br>
+      <input type="radio" name="blanket" value="2" id="blanket">Иногда бывает
+      <br>
+      <input type="radio" name="blanket" value="1" id="blanket">Просто обожаю
+    </label>
+    <br><br>
+    <label class="weather">Вы предпочитаете когда дома тепло или прохладно?
+      <br>
+      <input type="radio" name="weather" value="1" id="weather"required>Предпочитаю, чтобы было тепло
+      <br>
+      <input type="radio" name="weather" value="3" id="weather">Предпочитаю, чтобы было прохладно
+      <br>
+      <input type="radio" name="weather" value="2" id="weather">Без разницы, лишь бы было не холодно и не жарко
+    </label>
+    <br><br>
+    <label class="finish">И напоследок:
+      <br>
+      <input type="radio" name="finish" value="1" id="finish"required>Мяу-Мяу
+      <br>
+      <input type="radio" name="finish" value="1" id="finish">Мур-мур
+      <br>
+      <input type="radio" name="finish" value="3" id="finish"">Не нравится мне такое
+    </label>
+    <br><br>
+    <button type="submit" class="btn_sub">Узнать ответ</button>
+    <button type="reset">Сбросить</button>
+  </form>
+  <div class="result">Здесь будет отображён результат</div>
+  <script src="scrit.js"></script>
+</body>
+</html>
